@@ -71,6 +71,8 @@ The model produces 87%, which is not an overfitting accuracy. A real-time test v
 
 Only the card image should be cropped and passed to the code for the color detection logic. For the same, a yolov5 model is trained with only one class
 
+##Yolov5 model
+
 1. A dataset with class – 'Card'
 2. Labelled them using the Yolo Label tool
 3. All the necessary libraries to install for training yolov5 are commented in the notebook
@@ -78,6 +80,10 @@ Only the card image should be cropped and passed to the code for the color detec
 4. Finally, developed a yolov5-based object detection algorithm
 
 The ROI from this model is the input for color detection
+
+Results : Attached test.mp4 for card detection inference as it has some false predictions we are filtering out results with only 0.50 confidence or above
+
+## Color detectionb Logic
 
 This Python script imports several libraries such as NumPy, OpenCV (cv2), PyTorch, webcolors, and scikit-learn.
 
