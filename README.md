@@ -73,7 +73,7 @@ Only the card image should be cropped and passed to the code for the color detec
 
 ##Yolov5 model
 
-1. A dataset with class – 'Card'
+1. A dataset with class – 'Card' Link for data : https://drive.google.com/file/d/1dzFnyIcQR_7sWvtcDTTfmpwnyUoWnxEE/view?usp=share_link
 2. Labelled them using the Yolo Label tool
 3. All the necessary libraries to install for training yolov5 are commented in the notebook
 3. Images annotation should be disabled in the code, otherwise it will lead to misclassification
@@ -101,5 +101,15 @@ The plot_colors(hist, centroids) function takes a histogram and a list of cluste
 Overall, these functions can extract color information from images and create visualizations of the color distribution in those images.
 
 As the dominant color is white for all cards, we are taking the second dominant color to predict the card color. 
+
+Real Time Testing Video : https://drive.google.com/file/d/1Div2Rd9QidQoQvxkI4Tn30HbwX9LY_wW/view?usp=share_link
+
+Reference : 
+
+https://github.com/ultralytics/yolov5
+
+https://pyimagesearch.com/2019/11/11/detecting-natural-disasters-with-keras-and-deep-learning/
+
+https://pyimagesearch.com/2014/05/26/opencv-python-k-means-color-clustering/
 
 
