@@ -79,7 +79,7 @@ Only the card image should be cropped and passed to the code for the color detec
 3. Images annotation should be disabled in the code, otherwise it will lead to misclassification
 4. Finally, developed a yolov5-based object detection algorithm
 
-The ROI from this model is the input for color detection
+The ROI from this model is the input for color detection.Need to install all the necessary libraries mentioned in the notebooks to test this out.The weight path need to be modified accordingly.The weight is under yolo_weight_card_detection/weights/best.pt
 
 Results : Attached test.mp4 for card detection inference as it has some false predictions we are filtering out results with only 0.50 confidence or above
 
