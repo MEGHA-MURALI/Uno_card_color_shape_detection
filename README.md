@@ -1,10 +1,10 @@
-# Uno_card_color_shape_detection
+### Uno_card_color_shape_detection
  
-##Uno_Card_Detection
+## Uno_Card_Detection
 
 This model aims to detect which card has been thrown into the camera.
 
-##Dataset :
+## Dataset :
 
 It has 15 classes, each class with 500 images fed to the model
 
@@ -18,7 +18,7 @@ Link for Dataset : https://drive.google.com/file/d/1f-eFykeTvbOP69GSLFAN25HpBgMe
 
 Using different learning rates, comparing the accuracy and loss rates to find optimal learning rates, and fine-tuning the VGG16 CNN on the built dataset.
 
-##Import necessary packages including :
+## Import necessary packages including :
 
 matplotlib: For plotting (using the "Agg" backend to save plot images to disk).
 
@@ -30,7 +30,7 @@ keras callback: callback lead to faster convergence and typically require fewer 
 
 cv2: OpenCV for preprocessing and display.
 
-##The next section is :
+## The next section is :
  
 Grabs paths to all images in the dataset. Then initialize two synchronized lists to hold the image (data and labels)
 Loop over imagePaths, while:
@@ -52,7 +52,7 @@ Only the new FC layer head is used for training so that it fits the classes of t
 
 Then compile the model with the Stochastic Gradient Descent (SGD ) optimizer and try different learning rates to choose the best.
 
-##Implementing our Uno Card detection script : 
+## Implementing our Uno Card detection script : 
 
 Load necessary packages and modules. In particular, use deque from Python’s collections module to assist with our rolling average algorithm.
 
@@ -65,7 +65,7 @@ Performs a rolling average prediction of the predictions available in the Q.
 
 Then extract the highest probability class label to annotate the frame.
 
-##Output 
+## Output 
 
 The model produces 87%, which is not an overfitting accuracy. A real-time test video is attached to this.
 
@@ -73,7 +73,7 @@ The model produces 87%, which is not an overfitting accuracy. A real-time test v
 
 Only the card image should be cropped and passed to the code for the color detection logic. For the same, a yolov5 model is trained with only one class
 
-##Yolov5 model
+## Yolov5 model
 
 1. A dataset with class – 'Card' Link for data : https://drive.google.com/file/d/1dzFnyIcQR_7sWvtcDTTfmpwnyUoWnxEE/view?usp=share_link
 2. Labelled them using the Yolo Label tool
@@ -85,7 +85,7 @@ The ROI from this model is the input for color detection.Need to install all the
 
 Results : Attached test.mp4 for card detection inference as it has some false predictions we are filtering out results with only 0.50 confidence or above
 
-## Color detectionb Logic
+## Color detection Logic
 
 This Python script imports several libraries such as NumPy, OpenCV (cv2), PyTorch, webcolors, and scikit-learn.
 
@@ -106,7 +106,7 @@ As the dominant color is white for all cards, we are taking the second dominant 
 
 Real Time Testing Video : https://drive.google.com/file/d/1Div2Rd9QidQoQvxkI4Tn30HbwX9LY_wW/view?usp=share_link
 
-Reference : 
+## Reference : 
 
 https://github.com/ultralytics/yolov5
 
