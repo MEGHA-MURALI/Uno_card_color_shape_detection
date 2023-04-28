@@ -12,6 +12,8 @@ The dataset is made from videos recorded for a specific class, and a code attach
 
 Classes:"Card_0","Card_1","Card_2","Card_3","Card_4","Card_5","Card_6","Card_7","Card_8","Card_9","Draw_2+","Draw_4+","Reverse","Skip_Card","Wild_Card"
 
+Link for Dataset : https://drive.google.com/file/d/1f-eFykeTvbOP69GSLFAN25HpBgMeOy2r/view?usp=share_link
+
 ##Implementing the training script with Keras : 
 
 Using different learning rates, comparing the accuracy and loss rates to find optimal learning rates, and fine-tuning the VGG16 CNN on the built dataset.
